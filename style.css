@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    background-color: #e4e1db;
+    color: #727272;
+}
+
+header {
+    width: 55%;
+    margin: auto;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.logo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5em;
+}
+
+.logo:hover{
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+.contact {
+    font-family: 'Indie Flower', cursive;
+}
+
+.contact:hover {
+    transform: translateX(4px);
+    transition-duration: 0.3s;
+}
+
+main {
+    width: 55%;
+    border: 1px solid #bfbfbf;
+    margin: auto;
+    margin-top: 7em;
+}
+
+.websites{
+    margin: auto;
+    width: 100%;
+    border-spacing: 0;
+    font-family: 'Indie Flower', cursive;
+
+}
+
+.maintr {
+    background-color: #807e7c;
+    margin: auto;
+    color: white;
+}
+
+.othertr {
+    margin: auto;
+    height: 5em;
+    text-align: center;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+.othertr:hover{
+    background-color: #d8d5d0;
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    transition-duration: 0.4s;
+}
+
+tr.othertr td{
+    border-bottom: 1px solid #bfbfbf;
+}
+
+tr.othertr img {
+    max-height: 5em;
+    max-width: 7em;
+}
+
+@media (max-device-width: 500px) {
+
+header {
+    width: 90%;
+    margin: auto;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+    
+.logo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3em;
+}
+
+.contact {
+    font-family: 'Indie Flower', cursive;
+    font-size: 2em;
+}
+
+main{
+    width: 95%;
+}
+
+}
